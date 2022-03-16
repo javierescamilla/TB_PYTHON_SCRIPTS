@@ -3,8 +3,8 @@ import pandas as pd
 import time
 import datetime
 
-CSVFile = pd.read_csv("MYeBOXReports/chillerdecaf_0.csv", sep=';', skiprows=range(0,2), names=["Date", "Instant power", "Consumption"])
-client = TBDeviceMqttClient("34.231.242.52", "TfkIPYYazkGS7zpENhkh")
+CSVFile = pd.read_csv("MYeBOXReports/raw/Torres de enfriamiento sol1.csv", sep=';', skiprows=range(0,2), names=["Date", "Consumption", "Instant power"])
+client = TBDeviceMqttClient("34.231.242.52", "RfjHlGa4mTaGaZkCN6k0")
 client.connect()
 results = []
 result = True
